@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felices 5 años amor de mi vida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: url('img/5.jpeg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Ajustar la imagen al tamaño de la ventana */
+            background-position: center; /* Posición centrada de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Vayamos a tu santuario de pensamientos nocturos y busca la clave.</p>
+        <input type="text" placeholder="Digite la clave..." id="input">
+        <button id="btn">Ingresar</button>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("btn").addEventListener("click", function() {
+        var clave = document.getElementById("input").value; // Obtener el valor del input
+        if (clave.toLowerCase() === "lucerohermosa") { // Comprobar la clave ingresada
+            window.location.href = "6.html"; // Redireccionar si la clave es correcta
+        } else {
+            alert("La clave es incorrecta. Intente nuevamente."); // Mostrar alerta si la clave es incorrecta
+        }
+    });
+</script>
